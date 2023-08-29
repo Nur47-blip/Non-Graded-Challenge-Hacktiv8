@@ -1,3 +1,9 @@
+-- Non-Graded Challlenge 5
+-- Phase 0
+
+-- Nama	 : Muhammad Nur Alamsyah
+-- Batch : RMT-023
+
 CREATE TABLE customer (
 	customer_id serial PRIMARY KEY,
 	customer_name VARCHAR,
