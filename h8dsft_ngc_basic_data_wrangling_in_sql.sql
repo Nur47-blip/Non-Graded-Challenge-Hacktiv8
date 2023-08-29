@@ -27,14 +27,18 @@ VALUES
 	(3, '2022-04-25', 50.00);
 
 SELECT
-	customer_id,
-	COUNT(customer_id)
+	customer_name,
+	COUNT(orders.customer_id)
 FROM
 	orders
+INNER JOIN 
+	customer
+ON
+	orders.customer_id = customer.customer_id
 GROUP BY
-	customer_id
+	customer.customer_name
 ORDER BY
-	customer_id ASC
+	count DESC;
 
 	
 
